@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:ansi/ansi.dart';
-import 'init.dart';
-import 'code.dart';
-import 'decode.dart';
+// import 'init.dart';
+// import 'code.dart';
+// import 'decode.dart';
 
 Future<void> main(List<String> args) async
 {
@@ -55,7 +55,7 @@ Future<void> main(List<String> args) async
 		}
 	} on RangeError catch (e)
 	{
-		print("You idiot! You didn't pass arguments!\n");
+		print("You forgot arguments! I won the conversation lmao\n");
 		print("shadowpass - the new approach to passwords (dynamic passwords depending on the time)\n\n\tcode --- code specified password that can contain letters and numbers\n\tdecode --- decode specified password that contains letters and numbers\n\tget --- get some stuff like jump number, list of allowed characters and time\n\n\targuments for get: \n\tchars --- list of allowed characters\n\ttime --- current time\n\tjump --- get the jump number");
 	}
 }
